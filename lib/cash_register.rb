@@ -38,6 +38,7 @@ class CashRegister
     @quantity.times do
       @items.pop
     end
+    @total -= @price * @quantity
   end
 
 
